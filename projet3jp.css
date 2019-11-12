@@ -1,0 +1,46 @@
+.logo{
+	width: 400px;
+	text-align: center;
+}
+header{
+	text-align: center;
+	background-color: #579c87;
+	height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+	margin: auto;
+	font-style: sample;
+}
+.menu1, .menu2, .menu3, .menu4{
+	width: 500px;
+	border: 1px solid;
+}
+#container{
+	text-align: center;
+}
+#prochainement{
+	
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#579c87;
+	font-size: 52px;
+	color:#fdcb46;
+	cursor: pointer;
+	width: 450px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+footer{
+    background-color: #579c87;
+    color: #fdcb46;
+    height: 110px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    align-items: center;
+}
