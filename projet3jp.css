@@ -23,6 +23,53 @@ body{
 	margin: auto;
 	font-style: sample;
 }
+#menu1, #menu2, #menu3, #menu4{
+	height: 760px;
+	width: 530px;
+	border:	2px solid #ededed;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 1px 7px 5px #ededed;
+
+}
+#menu1{
+	background-color: #fcdfdb;
+	color: #3c1218;
+	font-family: marydale, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 30px;
+}
+#menu2{
+	background-color: #fff5fe;
+	font-family: dalliance-roman, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	color: #c77412;
+}
+#menu3{
+	background-color: #f9f9f9;
+	font-family: alisha, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	color: #0887fb;
+}
+#menu4{
+	background-color: #fdfffd;
+	font-family: cinque-donne, serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	color: #72bf56;
+}
+.fab.fa-itunes-note{
+	color: #f36d68;
+	font-size: 100px;
+}
 .menuP{
 	width: 500px;
 	border: 1px solid;
@@ -40,24 +87,27 @@ body{
 	text-align: center;
 }
 .btn {
-	font-family: 'robotoregular',serif;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
     background-color: #579c87;
     color: #fdcb46;
-    font-size: 3rem;
+    font-size: 2.5rem;
     cursor: pointer;
     padding: 1.3rem 3rem;
     border-radius: 2rem;
     transform: scale(1);
-    width:350px;
+    width:320px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 
 } 
 .btn:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;      
-  animation: ellipsis steps(4,end) 2000ms infinite;
+  animation: ellipsis steps(5,end) 2000ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
 }
@@ -128,11 +178,7 @@ transform: translate3d(4px, 0, 0);
     justify-content: space-evenly;
     margin-top: 3%;
 }
-#menu1, #menu2, #menu3, #menu4{
-	display: flex;
-    justify-content: center;
 
-}
 
 @media all and (max-width: 1180px){
 	.menu1, .menu2, .menu3, .menu4{
