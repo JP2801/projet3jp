@@ -32,7 +32,11 @@ body{
     display: flex;
     flex-direction: column;
     box-shadow: -1px 1px 7px 5px #ededed;
-
+    transform: scale(1);
+	transition-property: transform;
+    transition-duration: 400ms;
+    opacity: 1;
+    color: #fdcb46;
 }
 #menu1{
 	background-color: #fcdfdb;
@@ -42,6 +46,10 @@ body{
 	font-style: normal;
 	font-size: 30px;
 }
+#menu1:hover{
+	transform: scale(1.15);
+	opacity: .5;
+}
 #menu2{
 	background-color: #fff5fe;
 	font-family: dalliance-roman, sans-serif;
@@ -49,6 +57,10 @@ body{
 	font-style: normal;
 	font-size: 30px;
 	color: #c77412;
+}
+#menu2:hover{
+	transform: scale(1.15);
+	opacity: .5;
 }
 #menu3{
 	background-color: #f9f9f9;
@@ -58,6 +70,10 @@ body{
 	font-size: 30px;
 	color: #0887fb;
 }
+#menu3:hover{
+	transform: scale(1.15);
+	opacity: .5;
+}
 #menu4{
 	background-color: #fdfffd;
 	font-family: cinque-donne, serif;
@@ -65,6 +81,10 @@ body{
 	font-style: normal;
 	font-size: 30px;
 	color: #72bf56;
+}
+#menu4:hover{
+	transform: scale(1.15);
+	opacity: .5;
 }
 .fab.fa-itunes-note{
 	color: #f36d68;
@@ -97,7 +117,7 @@ body{
     padding: 1.3rem 3rem;
     border-radius: 2rem;
     transform: scale(1);
-    width:320px;
+    width:360px;
     margin: auto;
     margin-top: 90px;
     margin-bottom: 90px;
@@ -128,25 +148,27 @@ footer{
 	font-family: 'robotoregular';
     background-color: #579c87;
     color: #fdcb46;
-    height: 14%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
     align-items: center;
     position: sticky;
     width: auto;
     bottom: 0;
     padding-left: 3%;
     padding-right: 3%;
+    height: 60px;
 }
 
 .textefooter, #lien{
 	background-color: #579c87;
 	color: #fdcb46;
 	border:none;
-	font-size: 20px;
+	font-size: 30px;
 	text-decoration: none;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .textefooter:hover {
