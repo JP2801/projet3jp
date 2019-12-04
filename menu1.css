@@ -1,0 +1,121 @@
+body{
+	margin: auto;
+    font-family: marydale, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    background-color: #fcdfdb;
+    color:#3d1319;
+}
+header{
+	text-align: center;
+	background-color: #579c87;
+	height: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 400px;
+    text-align: center;
+}
+#titre{
+    text-align: center;
+}
+.fab.fa-itunes-note{
+    color: #f36d68;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+h1{
+    margin-top: 0;
+}
+h2{
+    text-align: center;
+}
+.soustitre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gauche{
+    height: 9px;
+    border-color: #f36d68;
+    border-width: 0px 0px 4px 0px;
+    border-radius: 0px 10px;
+    width: 400px;
+    margin-right: 30px;
+}
+.droite{
+    height: 15px;
+    border-color: #f36d68;
+    border-width: 0px 0px 4px 0px;
+    border-radius: 10px 0px;
+    width: 400px;
+    margin-left: 30px;
+}
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+#entree, #plat, #dessert, #prix1, #prix2{
+    list-style: none;
+}
+.plat{
+    display: flex;
+    margin-left: 100px;
+}
+#prix1{
+    margin-left: 120px;
+}
+#prix2{
+    margin-left: 170px;
+}
+.lien{
+    text-decoration: none;
+}
+footer{
+	font-family: 'robotoregular';
+    background-color: #579c87;
+    color: #fdcb46;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: auto;
+    bottom: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 60px;
+}
+
+.textefooter, #lien{
+	background-color: #579c87;
+	color: #fdcb46;
+	border:none;
+	font-size: 30px;
+	text-decoration: none;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.textefooter:hover {
+animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+#fin{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

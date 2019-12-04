@@ -4,7 +4,9 @@
          url('roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+}
+body{
+	margin: auto;
 }
 .logo{
 	width: 400px;
@@ -18,10 +20,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-body{
-	font-family: 'robotoregular';
-	margin: auto;
-	font-style: sample;
+.lien{
+	text-decoration: none;
 }
 #menu1, #menu2, #menu3, #menu4{
 	height: 760px;
@@ -90,18 +90,8 @@ body{
 	color: #f36d68;
 	font-size: 100px;
 }
-.menuP{
-	width: 500px;
-	border: 1px solid;
-	transform: scale(1);
-	transition-property: transform;
-    transition-duration: 400ms;
-    opacity: 1;
-    color: #fdcb46;
-}
-.menuP:hover{
-	transform: scale(1.15);
-	opacity: .5;
+#titre{
+	text-align: center;
 }
 #container{
 	text-align: center;
@@ -178,6 +168,10 @@ backface-visibility: hidden;
 perspective: 1000px;
 }
 
+h1, h2{
+	text-align: center;
+}
+
 @keyframes shake {
 10%, 90% {
 transform: translate3d(-1px, 0, 0);
@@ -193,16 +187,23 @@ transform: translate3d(4px, 0, 0);
 }
 }
 
-
-
 #menuhaut, #menubas{
 	display: flex;
     justify-content: space-evenly;
     margin-top: 3%;
 }
-
+#entree, #plat, #dessert{
+	display: flex;
+    justify-content: space-around;
+}
+.puces{
+	list-style: none;
+}
 
 @media all and (max-width: 1180px){
+	body{
+		width: 1180px;
+	}
 	.menu1, .menu2, .menu3, .menu4{
 		width: 350px;
 	}
@@ -211,6 +212,9 @@ transform: translate3d(4px, 0, 0);
 	}
 }
 @media all and (min-width: 360px) and (max-width: 700px){
+	body{
+		width: 700px;
+	}
 	#menuhaut, #menubas{
 		display: flex;
 		flex-direction: column;
