@@ -18,9 +18,28 @@ header{
 h1{
     color: #65b44f;
     font-size: 90px;
-}
-h1, h2{
     text-align: center;
+}
+h2{
+    text-align: center;
+    position: relative;
+}
+h2::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .2em; 
+    background: #65b44f;
+    z-index: -1;
+    opacity: 0.8;
+    transition: transform .6s;
+}
+h2:hover::after{
+    transform: scaleX(1);
 }
 .soustitre{
     display: flex;
