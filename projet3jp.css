@@ -7,6 +7,7 @@
 }
 body{
 	margin: auto;
+
 }
 .logo{
 	width: 400px;
@@ -22,6 +23,11 @@ header{
 }
 .lien{
 	text-decoration: none;
+}
+#menuhaut, #menubas{
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
 }
 #menu1, #menu2, #menu3, #menu4{
 	height: 760px;
@@ -168,10 +174,6 @@ backface-visibility: hidden;
 perspective: 1000px;
 }
 
-h1, h2{
-	text-align: center;
-}
-
 @keyframes shake {
 10%, 90% {
 transform: translate3d(-1px, 0, 0);
@@ -187,18 +189,7 @@ transform: translate3d(4px, 0, 0);
 }
 }
 
-#menuhaut, #menubas{
-	display: flex;
-    justify-content: space-evenly;
-    margin-top: 3%;
-}
-#entree, #plat, #dessert{
-	display: flex;
-    justify-content: space-around;
-}
-.puces{
-	list-style: none;
-}
+
 
 @media all and (max-width: 1180px){
 	body{
@@ -219,14 +210,10 @@ transform: translate3d(4px, 0, 0);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-evenly;
-	}
-	.menu1b, .menu3b{
-		margin-bottom: 10px;
 	}
 	footer{
 		font-size: 30px;
 	}
-	.menu4b{
-		margin-bottom: 15px;
+	.lien{
+		margin-bottom: 10px;
 	}
