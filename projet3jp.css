@@ -7,7 +7,6 @@
 }
 body{
 	margin: auto;
-
 }
 .logo{
 	width: 400px;
@@ -20,6 +19,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 .lien{
 	text-decoration: none;
@@ -193,27 +193,33 @@ transform: translate3d(4px, 0, 0);
 
 @media all and (max-width: 1180px){
 	body{
-		width: 1180px;
+		width: auto;
 	}
-	.menu1, .menu2, .menu3, .menu4{
-		width: 350px;
-	}
-	footer{
-		font-size: 40px;
-	}
+	#menuhaut, #menubas{
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
 }
 @media all and (min-width: 360px) and (max-width: 700px){
 	body{
-		width: 700px;
+		position: absolute;
 	}
 	#menuhaut, #menubas{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+	header{
+		width: auto;
 	}
+
 	footer{
-		font-size: 30px;
+		height: 50px;
 	}
-	.lien{
-		margin-bottom: 10px;
+	#lien{
+		font-size: 20px;
 	}

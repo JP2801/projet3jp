@@ -148,3 +148,26 @@ transform: translate3d(-4px, 0, 0);
 transform: translate3d(4px, 0, 0);
 }
 }
+@media all and (max-width: 1180px){
+    body{
+        width: auto;
+    }
+@media all and (min-width: 360px) and (max-width: 700px){
+    body{
+        width: auto;
+        position: absolute;
+        font-size: 40px
+    }
+    .plat{
+        margin-left: -125px;
+    }
+    #prix1{
+        margin-left: 50px;
+    }
+    #prix2{
+        margin-left: 170px;
+    }
+    #prix3{
+        margin-left: 500px;
+    }
+}
