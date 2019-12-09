@@ -1,12 +1,14 @@
 body{
     margin: auto;
-    font-family: dalliance-roman, sans-serif;
-    font-weight: 400;
+    font-family: marydale, sans-serif;
+    font-weight: 900;
     font-style: normal;
-    font-size: 25px;
-    background-color: #fff5fe;
+    font-size: 30px;
+    background-color: #fcdfdb;
     color:#3d1319;
 }
+
+/* -------------------- Header ---------------*/
 header{
     text-align: center;
     background-color: #579c87;
@@ -19,16 +21,27 @@ header{
     width: 400px;
     text-align: center;
 }
+
+/* -------------------- Fin Header ---------------*/
+
+/* -------------------- En-tête Menu ---------------*/
+
 #titre{
     text-align: center;
 }
-
+.fab.fa-itunes-note{
+    color: #f36d68;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
 h1{
     margin-top: 0;
-    color: #b36f9a;
-    font-size: 70px;
-    margin-top: 50px;
 }
+
+/* -------------------- Fin En-tête Menu ---------------*/
+
+/* -------------------- Composition Menu ---------------*/
 
 h2{
     text-align: center;
@@ -43,7 +56,7 @@ h2::after{
     left: 0;
     right: 0;
     height: .2em; 
-    background: #b36f9a;
+    background: #f36d68;
     z-index: -1;
     opacity: 0.8;
     transition: transform .6s;
@@ -58,7 +71,7 @@ h2:hover::after{
 }
 .gauche{
     height: 9px;
-    border-color:#b36f9a;
+    border-color: #f36d68;
     border-width: 0px 0px 4px 0px;
     border-radius: 0px 10px;
     width: 400px;
@@ -66,7 +79,7 @@ h2:hover::after{
 }
 .droite{
     height: 15px;
-    border-color: #b36f9a;
+    border-color: #f36d68;
     border-width: 0px 0px 4px 0px;
     border-radius: 10px 0px;
     width: 400px;
@@ -82,16 +95,25 @@ hr:before {
   border-width: 0 0 1px 0; 
   border-radius: 20px; 
 }
-#entree, #plat, #dessert, #prix1, #prix2{
+
+#maDivEntree,#maDivPlat,#maDivDessert{
+width: 78%;
+margin: auto;
+}
+
+.listentree,.listplat{
+    display: flex;
+    justify-content: space-between
+}
+
+
+#entree, #mesplats,#dessert, #prix2{
     list-style: none;
 }
 .plat{
     display: flex;
-    margin-left: 100px;
 }
-#prix1{
-    margin-left: 345px;
-}
+
 #prix2{
     margin-left: 170px;
 }
@@ -131,6 +153,7 @@ transform: translate3d(0, 0, 0);
 backface-visibility: hidden;
 perspective: 1000px;
 }
+
 @keyframes shake {
 10%, 90% {
 transform: translate3d(-1px, 0, 0);
@@ -146,23 +169,135 @@ transform: translate3d(4px, 0, 0);
 }
 }
 
-@media all and (max-width: 1180px){
-    body{
-        width: auto;
+#fin{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#noteEnchantee{
+        display: flex;
+    flex-direction: row;
+}
+
+/* -------------------- Fin Composition Menu ---------------*/
+
+/* -------------------- MediaQuerie ---------------*/
+@media all and (max-width: 1100px){
+    h1, .fab.fa-itunes-note{
+        font-size: 60px;
+        margin-right: 0;
     }
-@media all and (min-width: 360px) and (max-width: 700px){
-    body{
-        width: auto;
-        position: absolute;
-        font-size: 42px;
+    .listentree,.listplat{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .prix{
+        text-align: center;
     }
     .plat{
-        margin-left: 0px;
+        text-align: center;
+        font-size: 26px;
     }
-    #prix1{
-        margin-left: 260px;
+    .listdessert{
+        padding-top: 10px;
     }
-    #prix2{
-        margin-left: -20px;
+
+    #noteEnchantee {
+        flex-direction: column;
+    }
+
+    .iconemusic{
+        text-align: center;
+    }
+    #entree, #mesplats, #dessert{
+        padding-left: 0px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .gauche, .droite{
+        width: 300px;
+    }
+    footer{
+        height: 50px;
+    }
+    #lien{
+        font-size: 25px;
     }
 }
+@media all and (max-width: 910px){
+    .gauche, .droite{
+        width: 200px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .plat{
+        font-size: 20px;
+    }
+    footer{
+        height: 45px;
+    }
+    #lien{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 765px){
+    .logo{
+        width: 350px;
+    }
+    h1, .fab.fa-itunes-note{
+        font-size: 40px;
+        margin-right: 0;
+    }
+    .gauche, .droite{
+        width: 100px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .plat{
+        font-size: 15px;
+    }
+    footer{
+        height: 40px;
+    }
+    #lien{
+        font-size: 15px;
+    }
+    .textefooter{
+        font-size: 20px;
+
+    }
+@media all and (max-width: 580px){
+    .logo{
+        width: 300px;
+    }        
+    h1, .fab.fa-itunes-note{
+        font-size: 30px;
+        margin-right: 0;
+    }
+    .gauche, .droite{
+        width: 100px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .plat{
+        font-size: 10px;
+    }
+    footer{
+        height: 35px;
+    }
+    #lien{
+        font-size: 10px;
+    }
+    .textefooter{
+        font-size: 18px;
+
+    }
+}
+}
+/* -------------------- Fin MediaQuerie ---------------*/
