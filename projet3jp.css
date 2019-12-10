@@ -8,6 +8,7 @@
 body{
 	margin: auto;
 }
+/* -------------------- Header ---------------*/
 .logo{
 	width: 400px;
 	text-align: center;
@@ -21,13 +22,18 @@ header{
     align-items: center;
     width: auto;
 }
+/* -------------------- Fin Header ---------------*/
+/* -------------------- Menu ---------------*/
+#container{
+	text-align: center;
+}
 .lien{
 	text-decoration: none;
 }
 #menuhaut, #menubas{
 	display: flex;
     justify-content: space-evenly;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 #menu1, #menu2, #menu3, #menu4{
 	height: 760px;
@@ -43,6 +49,10 @@ header{
     transition-duration: 400ms;
     opacity: 1;
     color: #fdcb46;
+}
+.fab.fa-itunes-note{
+	color: #f36d68;
+	font-size: 100px;
 }
 #menu1{
 	background-color: #fcdfdb;
@@ -92,16 +102,9 @@ header{
 	transform: scale(1.15);
 	opacity: .5;
 }
-.fab.fa-itunes-note{
-	color: #f36d68;
-	font-size: 100px;
-}
-#titre{
-	text-align: center;
-}
-#container{
-	text-align: center;
-}
+/* -------------------- FIN Menu ---------------*/
+/* -------------------- Bouton ---------------*/
+
 .btn {
 	font-family: montserrat, sans-serif;
 	font-weight: 500;
@@ -139,7 +142,8 @@ header{
     width: 1.25em;    
   }
 }
-
+/* -------------------- Fin Bouton ---------------*/
+/* -------------------- Footer ---------------*/
 footer{
 	font-family: 'robotoregular';
     background-color: #579c87;
@@ -188,38 +192,91 @@ transform: translate3d(-4px, 0, 0);
 transform: translate3d(4px, 0, 0);
 }
 }
+/* -------------------- FIN Footer ---------------*/
+/* -------------------- MediaQuerie ---------------*/
 
-
-
-@media all and (max-width: 1180px){
+@media all and (max-width: 1100px){
 	body{
 		width: auto;
 	}
-	#menuhaut, #menubas{
-	display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
-    flex-direction: column;
-    align-items: center;
-}
-@media all and (min-width: 360px) and (max-width: 700px){
-	body{
-		position: absolute;
-	}
-	#menuhaut, #menubas{
-	display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
-    flex-direction: column;
-    align-items: center;
-}
-	header{
-		width: auto;
-	}
+	.logo{
+		width: 350px;
 
+	}
+	#menu1, #menu2, #menu3, #menu4{
+		height: 500px;
+    	width: 350px;
+    	font-size: 20px;
+	}
+	.fab.fa-itunes-note{
+		font-size: 60px;
+	}
+	#menuhaut, #menubas{
+		margin-top: 50px;
+	}
+	.btn{
+		width: 200px;
+		font-size: 22px;
+	}
 	footer{
 		height: 50px;
 	}
 	#lien{
 		font-size: 20px;
 	}
+	.textefooter:hover{
+		animation: none;
+	}
+}
+@media all and (max-width: 750px){
+	body{
+		width: auto;
+	}
+	#menuhaut, #menubas{
+		display: flex;
+    	justify-content: space-evenly;
+    	margin-top: 35px;
+    	flex-direction: column;
+    	align-items: center;
+	}
+	#menu2, #menu4{
+		margin-top: 35px;
+	}
+	header{
+		width: auto;
+	}
+	.logo{
+		width: 300px;
+	}
+	.btn{
+		width: 180px;
+    	font-size: 20px;
+	}
+	footer{
+		height: 50px;
+	}
+	#lien{
+		font-size: 20px;
+	}
+}
+@media all and (max-width: 400px){
+	.logo{
+		width: 250px;
+	}
+	#menu1, #menu2, #menu3, #menu4{
+		height: 400px;
+    	width: 250px;
+    	font-size: 15px;
+	}
+	#lien{
+		font-size: 12px;
+	}
+	.textefooter{
+		font-size: 15px;
+	}
+	.btn{
+		width: 110px;
+    	font-size: 12px;
+	}
+}
+/* -------------------- FIN MediaQuerie ---------------*/

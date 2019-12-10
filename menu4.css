@@ -188,7 +188,7 @@ transform: translate3d(4px, 0, 0);
         font-size: 60px;
         margin-right: 0;
     }
-    .listentree,.listplat{
+    .listentree,.listplat, .listdessert{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -199,17 +199,6 @@ transform: translate3d(4px, 0, 0);
     .plat{
         text-align: center;
         font-size: 26px;
-    }
-    .listdessert{
-        padding-top: 10px;
-    }
-
-    #noteEnchantee {
-        flex-direction: column;
-    }
-
-    .iconemusic{
-        text-align: center;
     }
     #entree, #mesplats, #dessert{
         padding-left: 0px;
@@ -243,6 +232,9 @@ transform: translate3d(4px, 0, 0);
     #lien{
         font-size: 20px;
     }
+    .textefooter{
+        font-size: 25px;
+    }
 }
 @media all and (max-width: 765px){
     .logo{
@@ -251,6 +243,12 @@ transform: translate3d(4px, 0, 0);
     h1, .fab.fa-itunes-note{
         font-size: 40px;
         margin-right: 0;
+    }
+    .gauche{
+        border-radius: 0px 9px;
+    }
+    .droite{
+        border-radius: 9px 0px;
     }
     .gauche, .droite{
         width: 100px;
@@ -283,7 +281,7 @@ transform: translate3d(4px, 0, 0);
         width: 100px;
     }
     h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     .plat{
         font-size: 10px;
@@ -298,6 +296,27 @@ transform: translate3d(4px, 0, 0);
         font-size: 18px;
 
     }
-}
+@media all and (max-width: 360px){
+    .logo{
+        width: 200px;
+    }
+    .gauche, .droite{
+        width: 60px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    .plat{
+        font-size:10px;
+    }    
+    .textefooter{
+        font-size: 10px;
+    }
+
+    }
+
 }
 /* -------------------- Fin MediaQuerie ---------------*/
