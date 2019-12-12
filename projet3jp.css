@@ -27,7 +27,7 @@ header{
 #container{
 	text-align: center;
 }
-.lien{
+#lien{
 	text-decoration: none;
 }
 #menuhaut, #menubas{
@@ -137,11 +137,6 @@ header{
   }
 }
 
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
-}
 /* -------------------- Fin Bouton ---------------*/
 /* -------------------- Footer ---------------*/
 footer{
@@ -160,11 +155,11 @@ footer{
     height: 60px;
 }
 
-.textefooter, #lien{
+.textefooter, .lien{
 	background-color: #579c87;
 	color: #fdcb46;
 	border:none;
-	font-size: 30px;
+	font-size: 18px;
 	text-decoration: none;
 	font-family: montserrat, sans-serif;
 	font-weight: 500;
@@ -221,7 +216,7 @@ transform: translate3d(4px, 0, 0);
 	footer{
 		height: 50px;
 	}
-	#lien{
+	.lien{
 		font-size: 20px;
 	}
 	.textefooter:hover{
@@ -255,7 +250,7 @@ transform: translate3d(4px, 0, 0);
 	footer{
 		height: 50px;
 	}
-	#lien{
+	.lien{
 		font-size: 20px;
 	}
 }
@@ -268,7 +263,7 @@ transform: translate3d(4px, 0, 0);
     	width: 250px;
     	font-size: 15px;
 	}
-	#lien{
+	.lien{
 		font-size: 12px;
 	}
 	.textefooter{

@@ -136,11 +136,11 @@ footer{
     height: 60px;
 }
 
-.textefooter, #lien{
+.textefooter, .lien{
     background-color: #579c87;
     color: #fdcb46;
     border:none;
-    font-size: 30px;
+    font-size: 18px;
     text-decoration: none;
     font-family: montserrat, sans-serif;
     font-weight: 500;
@@ -176,7 +176,7 @@ transform: translate3d(4px, 0, 0);
 }
 
 #noteEnchantee{
-        display: flex;
+    display: flex;
     flex-direction: row;
 }
 
@@ -212,7 +212,7 @@ transform: translate3d(4px, 0, 0);
     footer{
         height: 50px;
     }
-    #lien{
+    .lien{
         font-size: 25px;
     }
 }
@@ -229,7 +229,7 @@ transform: translate3d(4px, 0, 0);
     footer{
         height: 45px;
     }
-    #lien{
+    .lien{
         font-size: 20px;
     }
     .textefooter{
@@ -262,13 +262,13 @@ transform: translate3d(4px, 0, 0);
     footer{
         height: 40px;
     }
-    #lien{
+    .lien{
         font-size: 15px;
     }
     .textefooter{
         font-size: 20px;
-
     }
+}
 @media all and (max-width: 580px){
     .logo{
         width: 300px;
@@ -289,13 +289,13 @@ transform: translate3d(4px, 0, 0);
     footer{
         height: 35px;
     }
-    #lien{
+    .lien{
         font-size: 10px;
     }
     .textefooter{
         font-size: 18px;
-
     }
+}
 @media all and (max-width: 360px){
     .logo{
         width: 200px;
@@ -315,8 +315,5 @@ transform: translate3d(4px, 0, 0);
     .textefooter{
         font-size: 10px;
     }
-
-    }
-
 }
 /* -------------------- Fin MediaQuerie ---------------*/
